@@ -5,21 +5,21 @@ clc
 rho = 1.225;
 
 
-V = 11.1111;   %% 40 Kmph stall speed (minimum speed required for takeoff)
-m = 3;
+V = 16.667;   %% 60 Kmph stall speed (minimum speed required for takeoff)
+m = 4;
 g = 9.8;
 
 
 
 %% aerofoil Parameters
 
-%NACA 2412    
+
 
 a = 2*pi;
 Cl0 = 0.4; %%lift coefficient ( 0.28 at 0 angle of attack for NACA 2412)
 
 %for NACA 4412 Cl0 = 0.4;
-%for NACA 2412 Cl0 = 0.28;
+
 
 alpha = deg2rad(0);
 
@@ -40,6 +40,8 @@ A = 2*m*g/(Cl*V*V*rho);
 
 % calculating Cl at stall speed = 1.1024
 
+% chord 16 cm , body length 76 cm
+
 
 
 % https://www.eclipson-airplanes.com/modela
@@ -48,5 +50,5 @@ A = 2*m*g/(Cl*V*V*rho);
 
 %%
 
-chord = 0.4; %% 40 cm 
-wing_span = A/chord;
+chord = 0.30; %% 40 cm 
+wing_span = A/chord
